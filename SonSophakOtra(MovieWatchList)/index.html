@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Watchlist</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h3 class="center-align">Movie Watchlist</h3>
+
+      <div class="input-field">
+        <input
+          id="movie-name"
+          type="text"
+          class="validate"
+          placeholder="Enter movie title"
+        />
+      </div>
+      
+      <div class="input-field">
+        <input id="movie-category" type="text" class="validate" placeholder="Enter movie category (e.g. Action, Drama)" />
+      </div>
+      
+      <div class="input-field">
+        <input id="movie-rating" type="number" class="validate" placeholder="Enter movie rating (1-10)" />
+      </div>
+
+      <div class="input-field">
+        <input id="movie-release" type="date" class="validate" placeholder="Enter release date" />
+      </div>
+
+      <div class="input-field">
+        <input id="search-movie" type="text" class="validate" placeholder="Search movies" />
+      </div>
+
+      <div class="input-field">
+        <select id="filter-category" class="browser-default">
+          <option value="">All Categories</option>
+          <option value="Action">Action</option>
+          <option value="Comedy">Comedy</option>
+          <option value="Drama">Drama</option>
+          <option value="Horror">Horror</option>
+          <option value="Romance">Romance</option>
+          <option value="Anime">Anime</option>
+        </select>
+      </div>
+
+      <div class="input-field">
+        <select id="sort-by" class="browser-default">
+          <option value="">Sort By</option>
+          <option value="rating">Rating</option>
+          <option value="release-date">Release Date</option>
+        </select>
+      </div>
+
+      <button id="add-movie-btn" class="btn waves-effect waves-light" type="button">
+        Add Movie
+      </button>
+
+      <h5>My Watchlist</h5>
+      <ul id="movie-list" class="collection">
+      </ul>
+    </div>
+
+    
+
+    <script src="js/main.js"></script>
+  </body>
+</html>
